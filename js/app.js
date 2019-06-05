@@ -1,13 +1,13 @@
 'use strict';
 
-alert('Let\'s play a guessing game! Try to determine what my 5 responses would be (Yes/No)');
+alert('Let\'s play a guessing game! Try to determine what my 5 responses (Yes/No) would be.');
 
 //Prompt user's name.
 var userName = prompt('How may I address you?');
 alert('And so it begins ' + userName + '...');
 
 //Variables to hold user input from prompt. Then check input and respond to user.
-var countCorrect = 0;
+var countCorrect = 0; 
 var inputMovie = prompt('Do you think I enjoy movies?').toLowerCase();
 if (inputMovie === 'yes' || inputMovie === 'y') {
   alert('You are right - movies are a huge part of my life!');
@@ -23,14 +23,14 @@ if (inputOutdoors === 'yes' || inputOutdoors === 'y') {
   alert('There is something so calming about Nature, I thoroughly enjoy the outdoors.');
   countCorrect++;
 } else if (inputOutdoors === 'no' || inputOutdoors === 'n') {
-  alert ('You have just insulted me, prepare do duel!');
+  alert ('You have just insulted me, prepare do duel..');
 } else {
   alert('What kind of answer is that?!!??!');
 }
 
-var inputCode = prompt('Have I coded previously and/or a compentent developer?').toLowerCase();
+var inputCode = prompt('Have I coded previously and/or am I a compentent developer?').toLowerCase();
 if (inputCode === 'yes' || inputCode === 'y') {
-  alert('Indeed, I am multi-lingual and Java is one of my "languages". Hehehehe');
+  alert('Indeed.');
   countCorrect++;
 } else if (inputCode === 'no' || inputCode === 'n') {
   alert ('Oh yee with little faith!');
@@ -58,7 +58,7 @@ if (inputSeafood === 'yes' || inputSeafood === 'y') {
   alert('What kind of answer is that?!!??!');
 }
 
-//Send message to user with results.
+//Send ending message to user with results of guessing game.
 alert('Thanks for playing ' + userName + '. You got ' + countCorrect + '\\5 correct.');
 
 //Debug help; write to console.
