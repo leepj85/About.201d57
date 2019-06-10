@@ -2,6 +2,9 @@
 
 alert('Let\'s play a guessing game! Try to determine what my 7 responses (Yes/No) would be.');
 
+//Array of questions.
+var quesArray = ['Do you think I enjoy movies?', 'Is the outdoors greatness to me?', 'Have I coded previously and/or am I a compentent developer?', 'Do I have any secret super powers?', 'Am I a seafood lover?',  ];
+
 //Prompt user's name.
 var userName = prompt('How may I address you?');
 alert('And so it begins ' + userName + '...');
@@ -14,7 +17,7 @@ var numOfGames = 7;
 
 function questionOne () {
   //Question 1
-  var inputMovie = prompt('Do you think I enjoy movies?').toLowerCase();
+  var inputMovie = prompt(quesArray[0]).toLowerCase();
   if (inputMovie === 'yes' || inputMovie === 'y') {
     alert('You are right - movies are a huge part of my life!');
     countCorrect++;
@@ -29,7 +32,7 @@ questionOne();
 
 function questionTwo () {
   //Question 2
-  var inputOutdoors = prompt('Is the outdoors greatness to me?').toLowerCase();
+  var inputOutdoors = prompt(quesArray[1]).toLowerCase();
   if (inputOutdoors === 'yes' || inputOutdoors === 'y') {
     alert('There is something so calming about Nature, I thoroughly enjoy the outdoors.');
     countCorrect++;
@@ -46,7 +49,7 @@ questionTwo();
 function questionThree() {
 
   //Question 3
-  var inputCode = prompt('Have I coded previously and/or am I a compentent developer?').toLowerCase();
+  var inputCode = prompt(quesArray[2]).toLowerCase();
   if (inputCode === 'yes' || inputCode === 'y') {
     alert('Indeed.');
     countCorrect++;
@@ -61,7 +64,7 @@ questionThree();
 
 function questionFour() {
   //Question 4
-  var inputPowers = prompt('Do I have any secret super powers?').toLowerCase();
+  var inputPowers = prompt(quesArray[3]).toLowerCase();
   if (inputPowers === 'yes' || inputPowers === 'y') {
     alert('Awwwwww you think so highly of me *blush*');
   } else if (inputPowers === 'no' || inputPowers === 'n') {
@@ -76,7 +79,7 @@ questionFour();
 
 function questionFive() {
   //Question 5
-  var inputSeafood = prompt('Am I a seafood lover?').toLowerCase();
+  var inputSeafood = prompt(quesArray[4]).toLowerCase();
   if (inputSeafood === 'yes' || inputSeafood === 'y') {
     alert('nom nom nom nom nom!');
     countCorrect++;
@@ -92,7 +95,7 @@ questionFive();
 
 function questionSix(){
 //Question 6
-  var inputNumGuess = prompt('Guess a number between 1 to 10. (you have 4 tries!)');
+  var inputNumGuess = prompt(quesArray[5]);
   var myNum = '3';
 
   for (var i = 3; i > 0; i--) {

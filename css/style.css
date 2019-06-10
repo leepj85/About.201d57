@@ -6,6 +6,10 @@ h1 {
   background-color: black;
 }
 
+h3 {
+  color: rgb(110, 182, 39);
+}
+
 p {
   color: rgb(195, 233, 248);
   font-weight: bold;
@@ -13,5 +17,19 @@ p {
 
 body {
   background-color: rgb(173, 8, 8);
+  color: rgb(212, 228, 38);
 }
 
+p.one {
+  -moz-box-shadow: -5px -5px #777777;
+  -webkit-box-shadow: -5px -5px #777777;
+  box-shadow: -5px -5px #777777;
+}
+
+ul, ol {
+  border: 5px solid rgb(17, 238, 235);
+  border-radius: 20px;
+  padding: 0 0 10px 0;
+  text-align: center;
+  list-style: none;
+}
