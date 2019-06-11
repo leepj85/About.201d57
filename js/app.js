@@ -3,7 +3,7 @@
 alert('Let\'s play a guessing game! Try to determine what my 7 responses (Yes/No) would be.');
 
 //Array of questions.
-var quesArray = ['Do you think I enjoy movies?', 'Is the outdoors greatness to me?', 'Have I coded previously and/or am I a compentent developer?', 'Do I have any secret super powers?', 'Am I a seafood lover?',  ];
+var quesArray = ['Do you think I enjoy movies?', 'Is the outdoors greatness to me?', 'Have I coded previously and/or am I a compentent developer?', 'Do I have any secret super powers?', 'Am I a seafood lover?', 'Guess a number between 1 - 10.'];
 
 //Prompt user's name.
 var userName = prompt('How may I address you?');
